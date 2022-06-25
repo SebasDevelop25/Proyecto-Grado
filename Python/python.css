@@ -1,0 +1,178 @@
+body{
+    font-family: 'Exo', sans-serif;
+    background-color: #1e88c5;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container-menu{
+    margin: auto;
+    width: 500px;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.nav_menu li a{
+    background-color: #544c2e;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav_menu li a:hover{
+    background-color: #8d782a;
+}
+
+nav > li {
+   float: left;
+}
+
+.nav_menu li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav_menu li:hover > ul{
+   display: block;
+}
+
+.container-titulo{
+  margin: auto;
+  width: 420px;
+  padding-top: 100px;
+}
+
+.titulo{
+    padding: 20px;
+    border: 2px solid #39aec3;
+    border-radius: 30px;
+    background-color: #1dde9d31;
+}
+
+.container-info{
+    margin: auto;
+    width: 800px;
+    padding-top: 100px;
+    color: rgb(25, 17, 17);
+}
+
+.bottom-continue{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.bottom{
+    border: 3px solid #bae60c;
+    background-color: rgb(135, 148, 14);
+    border-radius: 30px;
+    padding: 20px;
+    user-select: none;
+}
+
+.bottom:hover{
+    background-color: rgb(227, 188, 59);
+    box-shadow: 0px 0px 30px #b27409;
+    transition: 1s;
+    border: none;
+}
+
+.container-level_1{
+    margin: auto;
+    width: 800px;
+    padding-top: 100px;
+}
+
+.container-sintaxis{
+    border: 2px solid #67635c75;
+    border-radius: 10px;
+    background-color: #67635c75;
+    font-size: 20px;
+    border: none;
+}
+
+.container-sintax_2{
+    border: 2px solid #67635c75;
+    border-radius: 10px;
+    background-color: #67635c75;
+    font-size: 20px;
+    border: none;
+}
+
+.token-var{
+    color: rgb(19, 112, 44);
+}
+
+.token-nombre{
+    color: rgb(32, 50, 114);
+}
+
+.token-condicional{
+    color: rgb(131, 21, 21);
+}
+
+.token-num{
+    color: #685e15;
+}
+
+.token-llamar{
+    color: #a0440f;
+}
+
+.token-paren{
+    color: rgb(60, 60, 60);
+}
+
+.container-problemas{
+    margin: auto;
+    width: 800px;
+    padding-top: 100px;
+}
+
+.desarrollo-1{
+    resize: none;
+}
+
+.desarrollo-2{
+    resize: none;
+}
+
+img{
+    width: 400px;
+    padding-top: 100px;
+}
+
+.ejemplo-var{
+    width: 400px;
+    height: 100px;
+}
+
+.ejemplo-prompt{
+    width: 800px;
+    height: 300px;
+}
+
+.token-condicion{
+    color: rgb(64, 18, 112);
+}
+
+.token-operacion{
+    color: rgb(29, 92, 73);
+}
+
+.desarrollo-1{
+    resize: none;
+}
+
+.desarrollo-2{
+    resize: none;
+}
