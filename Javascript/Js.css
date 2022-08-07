@@ -1,6 +1,7 @@
 body{
     font-family: 'Exo', sans-serif;
-    background-color: #debe74;
+    background: rgb(2,0,36);
+    background: linear-gradient(85deg, rgba(2,0,36,1) 0%, rgba(224,166,52,1) 21%);
 }
 *{
     padding: 0;
@@ -9,7 +10,7 @@ body{
 
 .container-menu{
     margin: auto;
-    width: 500px;
+    width: 1310px;
 }
 
 ul,li{
@@ -51,7 +52,7 @@ nav > li {
 
 .titulo{
     padding: 20px;
-    border: 2px solid #ffe100;
+    border: 2px inset #ffe100;
     border-radius: 30px;
     background-color: #03020131;
 }
@@ -140,11 +141,26 @@ nav > li {
 
 .desarrollo-1{
     resize: none;
+    width: 200px;
+    height: 50px;
+    border: 2px solid rgb(95, 89, 89);
+    background-color: rgb(152, 139, 139);
+    border-radius: 10px;
 }
 
-.desarrollo-2{
-    resize: none;
+.respuesta-1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #7a4818;
+    border: none;
 }
+
+.respuesta-1:hover{
+    background-color: #855b3b;
+}
+
 
 img{
     margin: auto;

@@ -1,6 +1,7 @@
 body{
     font-family: 'Exo', sans-serif;
-    background-color: #debe74;
+    background: rgb(2,0,36);
+background: linear-gradient(79deg, rgba(2,0,36,1) 0%, rgba(26,72,182,1) 28%);
 }
 *{
     padding: 0;
@@ -9,7 +10,7 @@ body{
 
 .container-menu{
     margin: auto;
-    width: 500px;
+    width: 1310px;
 }
 
 ul,li{
@@ -17,7 +18,7 @@ ul,li{
 }
 
 .nav_menu li a{
-    background-color: #544c2e;
+    background-color: #0d3b617f;
     color: #fff;
     text-decoration: none;
     padding: 10px 15px;
@@ -25,7 +26,7 @@ ul,li{
 }
 
 .nav_menu li a:hover{
-    background-color: #8d782a;
+    background-color: #14429e;
 }
 
 nav > li {
@@ -45,15 +46,16 @@ nav > li {
 
 .container-titulo{
     margin: auto;
-    width: 500px;
+    width: 420px;
     padding-top: 100px;
 }
 
 .titulo{
     padding: 20px;
-    border: 2px solid #ffe100;
+    border: 2px solid #359acc;
     border-radius: 30px;
-    background-color: #03020131;
+    background-color: #243d568b;
+    color: #fff
 }
 
 .container-info{
@@ -67,43 +69,43 @@ nav > li {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 5px;
     padding: 20px;
 }
 
 .bottom{
-    border: 3px solid #bae60c;
-    background-color: rgb(135, 148, 14);
+    border: 3px solid #0e2251;
+    background-color: rgb(73, 83, 169);
     border-radius: 30px;
     padding: 20px;
     user-select: none;
 }
 
 .bottom:hover{
-    background-color: rgb(227, 188, 59);
-    box-shadow: 0px 0px 30px #b27409;
-    transition: 1s;
+    background-color: #3859a6;
+    box-shadow: 0px 0px 30px #0e2251;
+    transition: .2s;
     border: none;
 }
 
 .container-level_1{
     margin: auto;
     width: 800px;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .container-sintaxis{
-    border: 2px solid #67635c75;
+    border: 2px solid #b0aa9f75;
     border-radius: 10px;
-    background-color: #67635c75;
+    background-color: #b0aa9f75;
     font-size: 20px;
     border: none;
 }
 
 .container-sintax_2{
-    border: 2px solid #67635c75;
+    border: 2px solid #b0aa9f75;
     border-radius: 10px;
-    background-color: #67635c75;
+    background-color: #b0aa9f75;
     font-size: 20px;
     border: none;
 }
@@ -140,10 +142,24 @@ nav > li {
 
 .desarrollo-1{
     resize: none;
+    width: 200px;
+    height: 50px;
+    border: 2px solid rgb(95, 89, 89);
+    background-color: rgb(152, 139, 139);
+    border-radius: 10px;
 }
 
-.desarrollo-2{
-    resize: none;
+.respuesta-1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #359acc;
+    border: none;
+}
+
+.respuesta-1:hover{
+    background-color: #3b6c85;
 }
 
 img{

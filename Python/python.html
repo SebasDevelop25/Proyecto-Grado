@@ -5,16 +5,17 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="python.css">
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.10/dist/sweetalert2.all.min.js"></script>
       </head>
     <body>
         <header class="container-menu">
             <nav class="nav_menu">
-                  <li><a href="..//Portada/index.html" target="_blank">Inicio</a></li>
+                  <li><a href="..//Portada/index.html">Inicio</a></li>
 
                   <li><a>Cursos</a>
                     <ul>
-                        <li><a href="..//Python/python.html" target="_blank">Js</a><li>
-                        <li><a href="..//C/C.html" target="_blank">C++</a></li>
+                        <li><a href="..//Javascript/Js.html">Js</a><li>
+                        <li><a href="..//C/C.html">C++</a></li>
                     </ul>
                    
                   </li>
@@ -72,7 +73,7 @@
                     <form class="container-input_1">
                         <h3 class="problema-1">Problema 1</h3> <br>  
                         <p class="pregunta-1">Imprime un texto</p>
-                        <textarea class="desarrollo-1"></textarea>
+                        <textarea class="desarrollo-1"></textarea><br><br>
                         <input type="submit" value="enviar" class="respuesta-1">
                     </form>
                 </div>
@@ -110,7 +111,7 @@
                     </pre>
                 </div><br>
                 <div><br>
-                    <h3 class="container-h3">Recuerda que en esta funcíon solo puedes poner texto, número, valores booleanos, etc, es decir, 
+                    <h3 class="container-h3">Recuerda que en esta funcíon solo puedes poner texto, número, valores booleanos, etc, por separado es decir, 
                         no los puedes juntar
                     </h3>
                 </div><br>
@@ -132,18 +133,29 @@
                     </pre>
                 </div>
                 <img src="ejemploType.png"><br><br>
-                <dt>class 'str' = string(cadena de texto)</dt><br>
-                <dt>class 'int' = entero(número)</dt><br>
-                <dt>class 'float' = decimal(número)</dt><br>
-                <dt>class 'bool' = booleano(valor lógico, true o false)</dt><br>
-                <dt>class 'list' = lista(valores agrupados)</dt><br>
-                <dt>class 'tuple' = lista(valores únicos)</dt>
+                <div>
+                <pre class="container-sintax_2">
+                    <code>
+             <span>class 'str' = string(cadena de texto)</span>
+
+             <span>class 'int' = entero(número)</span>
+
+             <span>class 'float' = decimal(número)</span>
+
+             <span>class 'bool' = booleano(valor lógico, true o false)</span>
+
+             <span>class 'list' = lista(valores agrupados)</span>
+
+             <span>class 'tuple' = lista(valores únicos)</span>
+                </code>
+                </pre>
+                <div><br>
                 <div class="container-problema_3">
-                    <form class="container-input_3">
+                    <form class="container-problemas">
                         <h3 class="problema-3">Problema 2</h3> <br>  
                         <p class="pregunta-3">Identifica una cadena de texto</p>
-                        <textarea class="desarrollo-3"></textarea>
-                        <input type="submit" value="enviar" class="respuesta-3">
+                        <textarea class="desarrollo-1" id="problema-2"></textarea>
+                        <input type="submit" value="enviar" class="respuesta-1" id="respuesta-2">
                     </form>
                 </div><br>
                 <div>
@@ -181,12 +193,12 @@
                 </pre>
             </div><br>
             <img src="ejemploConcatenacion.png"><br><br>
-            <div class="container-problema_4">
+            <div class="container-problemas">
                 <form class="container-input_4">
                     <h3 class="problema-4">Problema 3</h3> <br>  
                     <p class="pregunta-4">Concatena dos textos </p>
-                    <textarea class="desarrollo-4"></textarea>
-                    <input type="submit" value="enviar" class="respuesta-4">
+                    <textarea class="desarrollo-1" id="problema-3"></textarea>
+                    <input type="submit" value="enviar" class="respuesta-1" id="respuesta-3">
                 </form>
             </div><br>
             <div>
@@ -205,7 +217,7 @@
             </div><br>
             <div>
                 <h2 class="container-h2">LIST</h2><br>
-                <h3 class="container-h3">Sirve para agrupar números, textos, boleaons, etc, esto ayuda a mantener un orden en nuestro código y ahorrar espacio</h3><br>
+                <h3 class="container-h3">Es para agrupar números, textos, booleanos, etc, esto ayuda a mantener un orden en nuestro código y ahorrar espacio</h3><br>
                 <h2 class="container-h2">Sintaxis</h2>
                 <div class="container-sintaxis">
                     <pre class="container-code">
@@ -223,12 +235,12 @@
                 <h3 class="container-h3">Tambien puedes combinar los datos, siempre y cuando cumplas con los pararmetros que se proponen, como el de estar siempre
                     separado por comas.
                 </h3><br>
-                <div class="container-problema_4">
+                <div class="container-problemas">
                     <form class="container-input_4">
                         <h3 class="problema-4">Problema 4</h3> <br>  
                         <p class="pregunta-4">Crea una lista de 2 números, 2 textos y un valor booleano</p>
-                        <textarea class="desarrollo-4"></textarea>
-                        <input type="submit" value="enviar" class="respuesta-4">
+                        <textarea class="desarrollo-1" id="problema-4"></textarea>
+                        <input type="submit" value="enviar" class="respuesta-1" id="respuesta-4">
                     </form>
                 </div><br>
             <div>
@@ -240,10 +252,10 @@
                 <div class="container-sintaxis">
                     <pre class="container-code">
                         <code class="container-ejemplo">
-                <em class="container-element">(23,34,56,23)                   
+            <em class="container-element">(23,34,56,23)                   
                 </em> 
-                <em class="container-element">("Prueba","Lista", 2)</em>//Igual a la lista puedes combinar 
-                datos                         
+            <em class="container-element">("Prueba","Lista", 2)</em>//Igual a la lista puedes combinar 
+            datos                         
                 </code>
                     </pre>
                 </div><br>
@@ -257,11 +269,11 @@
                 <div class="container-sintaxis">
                     <pre class="container-code">
                         <code class="container-ejemplo">
-             <em class="container-element">{"PalabraClave" : "Dato",
-                 "PalabraClave" : "Dato"}//La palabra clave y el dato 
-                 van separados por : y los dos van con  "", e igualmente 
-                 como las anteriores, para añadir otra dato a la lista 
-                 se separa por comas
+        <em class="container-element">{"PalabraClave" : "Dato",
+            "PalabraClave" : "Dato"}//La palabra clave y el dato 
+            van separados por : y los dos van con  "", e igualmente 
+            como las anteriores, para añadir otra dato a la lista 
+            se separa por comas
                     </em>
                         </code>
                     </pre>
