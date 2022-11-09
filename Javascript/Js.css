@@ -1,7 +1,6 @@
 body{
     font-family: 'Exo', sans-serif;
-    background: rgb(2,0,36);
-    background: linear-gradient(85deg, rgba(2,0,36,1) 0%, rgba(224,166,52,1) 21%);
+    background: #0e1525;
 }
 *{
     padding: 0;
@@ -18,7 +17,7 @@ ul,li{
 }
 
 .nav_menu li a{
-    background-color: #544c2e;
+    background-color: #0d3b617f;
     color: #fff;
     text-decoration: none;
     padding: 10px 15px;
@@ -26,7 +25,7 @@ ul,li{
 }
 
 .nav_menu li a:hover{
-    background-color: #8d782a;
+    background-color: #14429e;
 }
 
 nav > li {
@@ -46,65 +45,68 @@ nav > li {
 
 .container-titulo{
     margin: auto;
-    width: 500px;
+    width: 420px;
     padding-top: 100px;
 }
 
 .titulo{
+    font-size: 27px;
     padding: 20px;
-    border: 2px inset #ffe100;
-    border-radius: 30px;
-    background-color: #03020131;
+    color: #fff;
+    text-shadow: 2px 2px 60px #0079f2;
 }
 
 .container-info{
+    color:#fff;
     margin: auto;
     width: 800px;
     padding-top: 100px;
-    color: rgb(25, 17, 17);
 }
 
 .bottom-continue{
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 5px;
     padding: 20px;
 }
 
 .bottom{
-    border: 3px solid #bae60c;
-    background-color: rgb(135, 148, 14);
-    border-radius: 30px;
+    color: #57abff;
+    background-color: #1c2333;
+    border-radius: 20px;
     padding: 20px;
     user-select: none;
 }
 
 .bottom:hover{
-    background-color: rgb(227, 188, 59);
-    box-shadow: 0px 0px 30px #b27409;
-    transition: 1s;
-    border: none;
+    background-color: transparent;
+    border: 2px solid #0079f2;
+    box-shadow: 0px 4px 20px #0079f2;
+    transition: .1s;
+    transform: scale(1.025);
 }
 
 .container-level_1{
+    background-color: #1c2333;
+    color: #fff;
     margin: auto;
     width: 800px;
-    padding-top: 100px;
+    padding: 50px;
 }
 
 .container-sintaxis{
-    border: 2px solid #67635c75;
+    border: 2px solid #b0aa9f75;
     border-radius: 10px;
-    background-color: #67635c75;
+    background-color: #b0aa9f75;
     font-size: 20px;
     border: none;
 }
 
 .container-sintax_2{
-    border: 2px solid #67635c75;
+    border: 2px solid #b0aa9f75;
     border-radius: 10px;
-    background-color: #67635c75;
+    background-color: #b0aa9f75;
     font-size: 20px;
     border: none;
 }
@@ -153,19 +155,19 @@ nav > li {
     text-align: center;
     justify-content: center;
     padding: 5px;
-    background-color: #7a4818;
+    background-color: #359acc;
     border: none;
 }
 
 .respuesta-1:hover{
-    background-color: #855b3b;
+    background-color: #3b6c85;
 }
 
 
 img{
     margin: auto;
-    width: 800px;
-    padding-top: 40px;
+    width: 700px;
+    padding-top: 50px;
 }
 
 .ejemplo-var{

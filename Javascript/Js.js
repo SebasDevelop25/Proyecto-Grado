@@ -99,7 +99,7 @@ enviar3.addEventListener("click",(e)=>{
 
 const validarCampo2 = ()=>{
     let error = []
-    if(texto3.value.indexOf("var") == -1 || texto3.value.indexOf("=") || texto3.value.indexOf("prompt") == -1 || texto3.value.indexOf(`(`) == -1 
+    if(texto3.value.indexOf("var") == -1 || texto3.value.indexOf("=") == -1 || texto3.value.indexOf("prompt") == -1 || texto3.value.indexOf(`(`) == -1 
     || texto3.value.indexOf(`"`) == -1 || texto3.value.indexOf(")") == -1 || texto3.value.indexOf("document.write") == -1 ){
         error[0] = true;
         error[1] = swal({
@@ -125,7 +125,7 @@ enviar4.addEventListener("click",(e)=>{
         result4 = error[1]
 
     } else{
-        result4 = a;Swal.fire({
+        result4 = Swal.fire({
             title: "Código Correcto",
             confirmButtonText: "Aceptar",
         })
@@ -170,9 +170,8 @@ enviar5.addEventListener("click",(e)=>{
 
 const validarCampo4 = ()=>{
     let error = []
-    if(texto4.value.indexOf("var") == -1 || texto4.value.indexOf("=") == -1 || texto4.value.indexOf(`(`) == -1 
-    || texto4.value.indexOf(")") == -1
-    || texto4.value.indexOf("document.write") == -1 ){
+    if(texto5.value.indexOf("var") == -1 || texto5.value.indexOf("=") == -1 || texto5.value.indexOf(`(`) == -1 
+    || texto5.value.indexOf(")") == -1 || texto5.value.indexOf("document.write") == -1 ){
         error[0] = true;
         error[1] = swal({
             type: 'error',
@@ -206,8 +205,8 @@ enviar6.addEventListener("click",(e)=>{
 
 const validarCampo5 = ()=>{
     let error = []
-    if(texto4.value.indexOf("var") == -1 || texto4.value.indexOf("=") == -1 || texto4.value.indexOf(`(`) == -1 
-    || texto4.value.indexOf(")") == -1 || texto4.value.indexOf("document.write") == -1 ){
+    if(texto6.value.indexOf("true") == -1 ||texto6.value.indexOf("&&") == -1 ||texto6.value.indexOf(`(`) == -1 
+    ||texto6.value.indexOf(")") == -1 ||texto6.value.indexOf("document.write") == -1 ){
         error[0] = true;
         error[1] = swal({
             type: 'error',
@@ -221,18 +220,18 @@ const validarCampo5 = ()=>{
     return error
 }
 
-const enviar7 = document.getElementById("respuesta-7")
+const enviar7 = document.getElementById("resultado-7")
 const texto7 = document.getElementById("problema-7")
 const result7= document.querySelector(".resultado")
 
 enviar7.addEventListener("click",(e)=>{
     e.preventDefault();
-    let error = validarCampo7();
+    let error = validarCampo6();
     if(error[0]){
-        result7 = error[1]
+        result6 = error[1]
 
     } else{
-        result7 = Swal.fire({
+        result6 = Swal.fire({
             title: "Código Correcto",
             confirmButtonText: "Aceptar",
         }); 
@@ -241,8 +240,8 @@ enviar7.addEventListener("click",(e)=>{
 
 const validarCampo6 = ()=>{
     let error = []
-    if(texto4.value.indexOf("if") == -1 || texto4.value.indexOf("{") == -1 || texto4.value.indexOf(`(`) == -1 
-    || texto4.value.indexOf(")") == -1 || texto4.value.indexOf("}") == -1 ){
+    if(texto7.value.indexOf("if") == -1 || texto7.value.indexOf("{") == -1 || texto7.value.indexOf(`(`) == -1 
+    || texto7.value.indexOf(")") == -1 || texto7.value.indexOf("}") == -1 ){
         error[0] = true;
     error[1] = swal({
         type: 'error',

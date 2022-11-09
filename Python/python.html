@@ -48,14 +48,15 @@
             <h1 class="level-1">NIVEL 1</h1><br>
             <h2 class="container-h2">PRINT()</h2><br>
             <h3 class="container-h3">Como primer elemento vamos a ver print, lo que hace es imprimir el texto dentro de la 
-                aplicación, es decir pone lo que esta dentro de este
+                aplicación, es decir pone lo que esta escrito dentro del elemento, en este caso lo que esta dentro de las 
+                comillas, porque es un texto.
             </h3><br>
         <h2 class="container-h2">Sintaxis</h2><br>
 
         <div class="container-sintaxis">
         <pre class="container-code">
             <code class="container-ejemplo">
-        <strong class="container-element">print</strong><em class="container-info">("Texto")</em>
+        <strong class="container-element_sintaxis">print</strong><em class="container-info_sintaxis">("Texto")</em>
             </code>
         </pre>
         </div><br>
@@ -72,46 +73,52 @@
                 <div class="container-problema_1">
                     <form class="container-input_1">
                         <h3 class="problema-1">Problema 1</h3> <br>  
-                        <p class="pregunta-1">Imprime un texto</p>
+                        <p class="pregunta-1">Imprime un texto</p><br>
                         <textarea class="desarrollo-1"></textarea><br><br>
                         <input type="submit" value="enviar" class="respuesta-1">
                     </form>
                 </div>
                 <div class="container-info_2"><br><br>
                     <h2 class="container-h2">CADENAS DE TEXTO</h2><br>
-                    <h3 class="container-h3">Existen multiples formar de crear cadenas de textos no solo con ""</h3><br>
+                    <h3 class="container-h3">Las cadenas de texto, son basicamente las formas para
+                        para escribir un texto, anteriormente vimos que se hacian con comillas pero
+                        existen multiples formar de crear cadenas de textos no solo con comillas,
+                        estas son las formas:</h3><br>
                     <h2 class="container-h2_2">Sintaxis</h2><br>
                 </div>   
                 <div class="container-sintaxis">
                     <pre class="container-code">
                         <code class="container-ejemplo">
-                    <strong class="container-element">print("Texto")
+                    <strong class="container-element_sintaxis">print("Texto")
 
                     </strong>
-                    <strong class="container-element">print('Texto')
+                    <strong class="container-element_sintaxis">print('Texto')
 
                     </strong>
-                    <strong class="container-element">print('''Texto''')
+                    <strong class="container-element_sintaxis">print('''Texto''')
 
                     </strong>
-                    <strong class="container-element">print("""Texto""")</strong>
+                    <strong class="container-element_sintaxis">print("""Texto""")</strong>
                         </code>
                     </pre>
                 </div><br>
                 <div><br><br>
                     <h2 class="container-h2">TYPE()</h2><br>
-                    <h3 class="container-h3">Esta función nos dice el tipo de elemento que nosotros le demos</h3><br>
+                    <h3 class="container-h3">Esta función sirve para saber de que esta compuesto un elemento, es decir
+                        se utiliza para saber, si lo que esta dentro del elemento, es un texto (string), un número, ya sea
+                        decimal o no, un valor booleano (verdadero o falso), una lista, etc...
+                    </h3><br>
                     <h2 class="container-h2">Sintaxis</h2>
                 </div>
                 <div class="container-sintaxis">
                     <pre class="container-code">
                         <code class="container-ejemplo">
-                    <strong class="container-element">print(type(Texto o Número))</strong>
+                    <strong class="container-element_sintaxis">print(type(Texto o Número))</strong>
                         </code>
                     </pre>
                 </div><br>
                 <div><br>
-                    <h3 class="container-h3">Recuerda que en esta funcíon solo puedes poner texto, número, valores booleanos, etc, por separado es decir, 
+                    <h3 class="container-h3">Recuerda que en esta funcíon solo puedes poner textos, números, valores booleanos, etc, pero por separado es decir, 
                         no los puedes juntar
                     </h3>
                 </div><br>
@@ -153,19 +160,22 @@
                 <div class="container-problema_3">
                     <form class="container-problemas">
                         <h3 class="problema-3">Problema 2</h3> <br>  
-                        <p class="pregunta-3">Identifica una cadena de texto</p>
-                        <textarea class="desarrollo-1" id="problema-2"></textarea>
+                        <p class="pregunta-3">Identifica una cadena de texto</p><br>
+                        <textarea class="desarrollo-1" id="problema-2"></textarea><br><br>
                         <input type="submit" value="enviar" class="respuesta-1" id="respuesta-2">
                     </form>
                 </div><br>
                 <div>
                     <h2 class="container-h2">CONCATENACIÓN</h2><br>
-                    <h3 class="container-h3">Sirve para unir textos(strings) en print</h3>
+                    <h3 class="container-h3">Sirve para unir textos (strings) en print, lo hace mediante una suma, como se ve 
+                        a continuación, la suma une los dos textos que van por separado y lo que hace es crear una tercera cadena de texto
+                        donde queda la suma de los dos primeros
+                    </h3>
                 </div><br>
                 <div class="container-sintaxis">
                 <pre class="container-code">
                     <code class="container-ejemplo">
-      <em class="container-element">print(Texto + Texto)</em>
+      <em class="container-element_sintaxis">print(Texto + Texto)</em>
                     </code>
                 </pre>
             </div><br>
@@ -176,7 +186,7 @@
             <div class="container-sintaxis">
                 <pre class="container-code">
                     <code class="container-ejemplo">
-                <em class="container-element">print(num + num)</em>
+                <em class="container-element_sintaxis">print(num + num)</em>
                     </code>
                 </pre>
             </div><br>
@@ -186,7 +196,7 @@
             <div class="container-sintaxis">
                 <pre class="container-code">
                     <code class="container-ejemplo">
-                <span class="token-var">print(</span><span class="token-nombre">"Hola"</span> <span class="token-condicional">+</span> <span class="token-nombre">"mundo"</span><span class="token-var">)</span>
+                <span class="token-var">print(</span><span class="token-nombre">"Hola"</span> <span class="token-condicional">+</span> <span class="token-nombre">"Mundo"</span><span class="token-var">)</span>
 
                 <span class="token-var">print(</span> <span class="token-num">23</span> <span class="token-condicional">+</span> <span class="token-num">23</span><span class="token-var">)</span> 
             </code>
@@ -196,19 +206,21 @@
             <div class="container-problemas">
                 <form class="container-input_4">
                     <h3 class="problema-4">Problema 3</h3> <br>  
-                    <p class="pregunta-4">Concatena dos textos </p>
-                    <textarea class="desarrollo-1" id="problema-3"></textarea>
+                    <p class="pregunta-4">Concatena dos textos </p><br>
+                    <textarea class="desarrollo-1" id="problema-3"></textarea><br><br>
                     <input type="submit" value="enviar" class="respuesta-1" id="respuesta-3">
                 </form>
             </div><br>
             <div>
                 <h2 class="container-h2">VALORES BOOLEANOS</h2><br>
-                <h3 class="container-h3">Son valores lógicos y únicos, true(verdadero) y false(falso). Estos valores son únicos, y se utilizan principalmente en funciones
+                <h3 class="container-h3">Son valores lógicos y únicos, true (verdadero) y false (falso). Estos valores son únicos, y se utilizan principalmente 
+                    en funciones, ya veremos mas adelante mejor el uso que se le puede dar a este.
+
                 </h3><br>
                 <div class="container-sintaxis">
                     <pre class="container-code"> 
                         <code class="container-ejemplo">
-                <em class="container-element">True
+                <em class="container-element_sintaxis">True
                 False
                 </em> 
                 </code>
@@ -222,54 +234,55 @@
                 <div class="container-sintaxis">
                     <pre class="container-code">
                         <code class="container-ejemplo">
-    <em class="container-element">[23,56,1,87,6,4]//Abres llaves y siempre el número tiene que estar
+    <em class="container-element_sintaxis">[23,56,1,87,6,4]//Abres llaves y siempre el número tiene que estar
         separado por una coma
     </em>
-    <em class="container-element">["Hola","Mundo","Python"] //Recuerden siempre abrir y cerra las 
+    <em class="container-element_sintaxis">["Hola","Mundo","Python"] //Recuerden siempre abrir y cerra las 
         comillas cuando vayan a crear otro texto y tambien separar
         por comas
     </em>           
                         </code>
                     </pre>
                 </div><br>
-                <h3 class="container-h3">Tambien puedes combinar los datos, siempre y cuando cumplas con los pararmetros que se proponen, como el de estar siempre
-                    separado por comas.
+                <h3 class="container-h3">Tambien puedes combinar los datos, es decir, en una misma lista poner varios 
+                    datos, como textos, números, entre otro siempre y cuando cumplas con los pararmetros que se proponen,
+                    como el de estar siempre separado por comas.
                 </h3><br>
                 <div class="container-problemas">
                     <form class="container-input_4">
-                        <h3 class="problema-4">Problema 4</h3> <br>  
-                        <p class="pregunta-4">Crea una lista de 2 números, 2 textos y un valor booleano</p>
-                        <textarea class="desarrollo-1" id="problema-4"></textarea>
+                        <h3 class="problema-4">Problema 4</h3><br>
+                        <p class="pregunta-4">Crea una lista de 2 números, 2 textos y un valor booleano</p><br>
+                        <textarea class="desarrollo-1" id="problema-4"></textarea><br><br>
                         <input type="submit" value="enviar" class="respuesta-1" id="respuesta-4">
                     </form>
                 </div><br>
             <div>
                 <h2 class="container-h2">TUPLES</h2><br>
-                <h3 class="container-h3"> Es similar a las listas, su sus únicas diferencias es que la tuples utilizan valores únicos, es decir estos no se pueden modificar
-                    y se abren y se cierran con ().
+                <h3 class="container-h3"> Es similar a las listas, sus únicas diferencias es que la tuples utilizan valores únicos, 
+                    es decir estos no se pueden modificar y se abren y se cierran con ().
                 </h3><br>
                 <h2 class="container-h2">Ejemplo</h2><br>
                 <div class="container-sintaxis">
                     <pre class="container-code">
                         <code class="container-ejemplo">
-            <em class="container-element">(23,34,56,23)                   
+            <em class="container-element_sintaxis">(23,34,56,23)                   
                 </em> 
-            <em class="container-element">("Prueba","Lista", 2)</em>//Igual a la lista puedes combinar 
-            datos                         
+            <em class="container-element_sintaxis">("Prueba","Lista", 2)//Igual a la lista puedes combinar 
+                datos </em>                       
                 </code>
                     </pre>
                 </div><br>
             </div>
             <div>
                 <h2 class="container-h2">DICTIONARY</h2><br>
-                <h3 class="container-h3">Es un tipo de lista mas especifia, donde cada dato le puedes añadir una palabra clave, para especificar
+                <h3 class="container-h3">Es un tipo de lista mas especifia, donde cada dato le puedes añadir una palabra clave para especificar
                     cada dato y se abre y se cierra con {}
                 </h3><br>
                 <h2 class="container-h2">Sintaxis</h2><br>
                 <div class="container-sintaxis">
                     <pre class="container-code">
                         <code class="container-ejemplo">
-        <em class="container-element">{"PalabraClave" : "Dato",
+        <em class="container-element_sintaxis">{"PalabraClave" : "Dato",
             "PalabraClave" : "Dato"}//La palabra clave y el dato 
             van separados por : y los dos van con  "", e igualmente 
             como las anteriores, para añadir otra dato a la lista 

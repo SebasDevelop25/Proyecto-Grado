@@ -47,7 +47,7 @@
         <div class="container-level_1">
             <h1 class="level-1">NIVEL 1</h1><br>
             <h2 class="container-h2">VAR</h2><br>
-            <h3 class="container-h3">Lo primero que vamos aprender es var, este elemento declara una variable, es decir nombra un elemento
+            <h3 class="container-h3">Lo primero que vamos aprender es var, este elemento declara una variable, es decir, puedes nombra un elemento
         a su preferencia para después darle uso</h3><br>
         <h2 class="container-h2">Sintaxis</h2><br>
 
@@ -62,8 +62,8 @@
         <h3 class="container-h3">El nombre de la variable puede ser el que tú quieras, en el cual podemos nombrar diferentes elementos, que mas adelante vamos a ver</h3><br>
         <dt>ElementoADeclarar</dt><br>
         <h3 class="container-h3">El elemento a declarar, es cualquier elemento que se va a nombrar, pueden ser textos, números, elementos o condicionales</h3><br>
-        <h3 class="container-h3">Recuerda que la variable se crea antes de la ejecución del código y este solo esta creado para su uso, es decir solo creamos la variable,
-            para que al momento de ejecutar el código tener que declarar la variable
+        <h3 class="container-h3">Recuerda que la variable se crea antes de la ejecución de algun condicional, o cadena de código y este solo esta creado para su uso, es decir solo creamos la variable,
+            para que al momento de ejecutar la cadena de código tener que declarar la variable
         </h3><br>
         <div class="container-sintax_2">
 
@@ -140,7 +140,11 @@
                         <code>
    <span class="token-var">var</span> <span class="token-nombre">NombreDeLaVariable</span> <span class="token-condicional">=</span> <span class="token-num">prompt("CualquierCosa")</span>
    <span class="token-llamar">document.write</span><span class="token-llamar">(</span><span class="token-nombre">NombreDeLaVariable</span><span class="token-llamar">)</span> <span>//Declaramos la variable para 
-    que se ejecute en la página </span>
+    que se ejecute en la página, es decir, como el elemento
+    prompt es un elemento que pide datos y estos datos se 
+    quedan guardados en el servidor, osea, el usuario no 
+    puede ver el dato y el elemento document.write() sirve 
+    para mostrar todo en pantalla. </span>
                         </code>
                     </pre>
                 </div><br><br>
@@ -149,35 +153,37 @@
                 <div class="container-problema_3">
                     <form class="container-input_3">
                         <h3 class="problema-3">Problema 3</h3> <br>  
-                        <p class="pregunta-3">Crea un prompt, nombralo en una variable y ejecutalo en la página</p>
+                        <p class="pregunta-3">Crea un prompt, nombralo en una variable y muestralo en pantalla</p>
                         <textarea class="desarrollo-1" id="problema-3"></textarea>
                         <input type="submit" value="enviar" class="respuesta-1" id="respuesta-3">
                     </form>
                 </div><br>
                 <div>
                     <h2 class="container-h2">CONCATENACIÓN</h2><br>
-                    <h3 class="container-h3">Sirve para unir textos(strings) en variables</h3>
+                    <h3 class="container-h3">Sirve para unir textos(strings) en variables, es decir, sumar variables
+                        en donde se hallan texto
+                    </h3>
                 </div><br>
                 <div class="container-sintaxis">
                 <pre class="container-code">
                     <code class="container-ejemplo">
-      <em class="container-element">var1 NombreDeLaVariable = Texto</em>
-      <em class="container-element">var2 NombreDeLaVariable = Texto</em>
-      <em class="container-element">var3 NombreDeLaVariable = NombreDeLaVariable + NombreDeLaVariable</em>
+      <em class="container-element">var1 NombreDeLaVariable1 = Texto</em>
+      <em class="container-element">var2 NombreDeLaVariable2 = Texto</em>
+     <em class="container-element">var3 NombreDeLaVariable = NombreDeLaVariable1 + NombreDeLaVariable2</em>
                     </code>
                 </pre>
             </div><br>
             <div>
                 <h3 class="container-h3">Con números, haciendo ese proceso lo que haría es sumarse, para evitar eso, tendremos que añadirle una cadena
-                    de texto
+                    de texto al momento de sumarse, esto para que la función actue como una "concatenación"
                 </h3>
             </div><br>
             <div class="container-sintaxis">
                 <pre class="container-code">
                     <code class="container-ejemplo">
-                <em class="container-element">var NombreDeLaVariable = Numero1</em>
-                <em class="container-element">var NombreDeLaVariable = Numero2</em>
-                <em class="container-element">var3 = "" + NombreDeLaVariable + NombreDeLaVariable</em>
+                <em class="container-element">var NombreDeLaVariable1 = Numero1</em>
+                <em class="container-element">var NombreDeLaVariable2 = Numero2</em>
+                <em class="container-element">var3 = "" + NombreDeLaVariable1 + NombreDeLaVariable2</em>
                     </code>
                 </pre>
             </div><br>
@@ -209,7 +215,9 @@
                     Ya sabemos principalmente que los textos se hacen utilizando "", pero existe otros como:
                 </h3><br>
                 <h2 class="container-h2">${}</h2><br>
-                <h3 class="container-h3">Este se utiliza para añadir textos dentro de otro texto por medio de una variable, basicamente su uso sería así:</h3><br>
+                <h3 class="container-h3">Este se utiliza para añadir textos dentro de otro texto por medio de una variable, esto se pareceria una concatenación,
+                    su unica direcencia es que no habria nesecidad de utilizar (+), tambien recuerda, si vas a utilizar este tipo de BACKTICKS, el texto donde
+                    lo vayas a añadir debes estar abierto en (``) y no en (""), basicamente su uso sería así:</h3><br>
                 <div class="container-sintaxis">
                     <pre class="container-code">
                         <code class="container-ejemplo">
@@ -218,7 +226,9 @@
             <span class="token-var">var</span> <span class="token-nombre">frase</span> <span class="token-condicional">=</span> <span class="token-num">`</span><span class="token-nombre">${Texto1}</span> <span class="token-nombre">${Texto2}</span><span class="token-num"> ¿Cómo estas?`</span><span>
             //Este es un texto normal, su unica diferencia, es que ya 
             no va con "", si no con ``, porque vamos añadir una variable 
-            dentro de este</span>
+            dentro de este, tambien recuerda separar en espacios cada 
+            variable, si no estan separadas resultara sin espacio y se 
+            pegaran al texto al momento de su ejecución</span>
              <span class="token-llamar">document.write(</span><span class="token-nombre">frase</span><span class="token-llamar">)</span>   
                 </code>
                     </pre>
@@ -228,11 +238,15 @@
             </div><br>
             <div>
                 <h2 class="container-h2">OPERADORES</h2><br>
-                <h3 class="container-h3">Existe dos tipos de operadores, los de comparación y los lógicos.</h3><br>
+                <h3 class="container-h3">Los operadores son principalmente la forma en la cual formulamos operaciones
+                    para funciones, es decir, sirven para que se cumpla un requerimiento y a partir de esa operación 
+                    ejecutar la linea de codigo, claro si se cumple la operación. Existe dos tipos de operadores, 
+                    los de comparación y los lógicos.</h3><br>
                 <h2 class="container-h2">Operadores de comparación</h2><br>
                 <h3 class="container-h3">Su función es comparar variables, entre otros elementos. Lo que hace es comparar por medio de unos operadores
                     que lo que hacen es devolver un codigo booleanos(falso o verdadero), es decir si es verdadera la comparación, nos lanzara un valor
-                    verdadero y si no será falso.
+                    verdadero y si no será falso. Cabe recalcar que estas clase  de operaciones se pueden hacer, con o sin variables, es decir,
+                    podemos añadir un texto o un número sin nesecidad de que sea una variable exactamente.
                 </h3><br>
                 <h3 class="container-h3">A continuación te mostrare los operadores que existen</h3><br>
                 <h2 class="container-h2">Sintaxis</h2>
